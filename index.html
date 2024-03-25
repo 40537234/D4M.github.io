@@ -103,34 +103,42 @@
                     <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="" target="_blank"
-                   rel="noopener noreferrer">Duo Su</a><sup>1*</sup>,</span>
+                   rel="noopener noreferrer">Duo Su</a><sup>1,5,6,&dagger;</sup>,&nbsp;</span>
                         <span class="author-block">
                 <a href="" target="_blank"
-                   rel="noopener noreferrer">Junjie Hou</a><sup>1*</sup>,</span>
+                   rel="noopener noreferrer">Junjie Hou</a><sup>2,5,6,&dagger;</sup>,&nbsp;</span>
                         <span class="author-block">
-                <a href="" target="_blank"
-                   rel="noopener noreferrer"> Weizhi Gao</a><sup>2</sup>,
-              </span>
+                <a href="https://weizhigao.github.io/" target="_blank"
+                   rel="noopener noreferrer"> Weizhi Gao</a><sup>3</sup>,&nbsp;</span>
                         <span class="author-block">
                 <a href="https://scholar.google.com/citations?hl=zh-CN&user=CpmL7BkAAAAJ" target="_blank"
-                   rel="noopener noreferrer">Yingjie Tian</a><sup>3</sup>,
-              </span>
+                   rel="noopener noreferrer">Yingjie Tian</a><sup>4,5,6,7,*</sup>,
+                   &nbsp;</span>
                         <span class="author-block">
-                <a href="" target="_blank" rel="noopener noreferrer">Bowen Tang</a><sup>4</sup>,
-              </span>
+                <a href="" target="_blank" rel="noopener noreferrer">Bowen Tang</a><sup>8</sup>,
+                &nbsp;</span>
+                <br><br>
 
               </span>
                     </div>
 
                     <div class="is-size-5 publication-authors">
-                        <span class="author-block"><sup>1</sup>University of Chinese Academy of Sciences,</span>
-                        <span class="author-block"><sup>2</sup>North Carolina State University,</span>
+                        <span class="author-block"><sup>1</sup>School of Computer Science and Technology, UCAS,&nbsp;&nbsp;</span>
+                        <span class="author-block"><sup>2</sup>Sino-Danish College, UCAS,&nbsp;&nbsp;</span>
                         <br>
-                        <span class="author-block"><sup>3</sup>CAS Research Center On Fictitious Economy & Data Science,</span>
-                        <span class="author-block"><sup>4</sup>HUAWEI</span>
+                        <span class="author-block"><sup>3</sup>Department of Computer Science, NCSU,&nbsp;&nbsp;</span>
+                        <span class="author-block"><sup>4</sup>School of Economics and Management, UCAS,&nbsp;&nbsp;</span>
                         <br>
-                        <span class="author-block"><sup>*</sup>Equal contribution</span>
+                        <span class="author-block"><sup>5</sup>Research Center on Fictitious Economy and Data Science, CAS,&nbsp;&nbsp;</span>
+                        <span class="author-block"><sup>6</sup>Key Laboratory of Big Data Mining and Knowledge Management, CAS,&nbsp;&nbsp;</span>
+                        <br>
+                        <span class="author-block"><sup>7</sup>MOE Social Science Laboratory of Digital Economic Forecasts and Policy Simulation, UCAS,&nbsp;&nbsp;</span>
+                        <span class="author-block"><sup>8</sup>Institute of Computing Technology, CAS,&nbsp;&nbsp;</span>
+                        <br><br>
+                        <span class="author-block"><sup>&dagger;</sup>Equal contribution</span>
+                        <span class="author-block"><sup>*</sup>Corresponding authors</span>
                     </div>
+                    <br>
 
 
                     <div class="column has-text-centered">
@@ -190,15 +198,12 @@
                         Dataset distillation offers a lightweight synthetic dataset for fast network training with promising test accuracy. 
                         To imitate the performance of the original dataset, most approaches employ bi-level optimization and the distillation space relies on the matching architecture.
                         Nevertheless, these approaches either suffer significant computational costs on large-scale datasets or experience performance decline on cross-architectures. 
-                        We advocate for designing an economical dataset distillation framework that is independent of the matching architectures, ensuring the versatility of the datasets.
+                        We advocate for designing an economical dataset distillation framework that is independent of the matching architectures.
                         With empirical observations, we argue that constraining the consistency of the real and synthetic image spaces will enhance the cross-architecture generalization. 
-                        Motivated by this, we introduce Dataset Distillation via Disentangled Diffusion Model (D<sup>4</sup>M), an efficient framework for dataset distillation on large-scale datasets.
-                        Compared to architecture-dependent methods, D<sup>4</sup>M employs diffusion model with an autoencoder to guarantee consistency and incorporates label information into category prototypes, 
-                        which not only reduces computational overhead but also endows the synthetic image with superior representation capability.  
+                        Motivated by this, we introduce Dataset Distillation via Disentangled Diffusion Model (D<sup>4</sup>M), an efficient framework for dataset distillation. 
+                        Compared to architecture-dependent methods, D<sup>4</sup>M employs latent diffusion model to guarantee consistency and incorporates label information into category prototypes.
                         The distilled datasets are versatile, eliminating the need for repeated generation of distinct datasets for various architectures.
-                        We implement D<sup>4</sup>M on the ImageNet as well as several other benchmarks. 
                         Through comprehensive experiments, D<sup>4</sup>M demonstrates superior performance and robust generalization, surpassing the SOTA methods across most aspects.
-                        Code and distilled datasets will be public.
                     </p>
                 </div>
                 <div>
